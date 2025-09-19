@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>App Usuarios</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header role="banner">
+    <h1>Gestor de Usuarios</h1>
+    <nav role="navigation" aria-label="Menú principal">
+      <a href="index.html">Inicio</a> |
+      <a href="listar.php">Lista</a> |
+      <a href="login.php">Login</a>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="registro-title">
+      <h2 id="registro-title">Registrar usuario</h2>
+      <form action="registro.php" method="post" role="form" aria-label="Formulario de registro">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required aria-required="true" maxlength="100">
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>Ejercicio taller · Práctica MVC · &copy; 2025</p>
+  </footer>
+</body>
+</html>
